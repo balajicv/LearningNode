@@ -1,0 +1,31 @@
+<% include("top")%>
+
+<form action='/login' method='post' id='f'>
+	<table>
+		<tr>
+			<td>
+				<span>
+					<strong>email</strong>
+				</span>
+			</td>
+			<td>
+				<input id='username' type='text' name='email'/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span>
+					<strong>password</strong>
+				</span>
+			</td>
+			<td>
+				<input id='pin' type='text' name='password'/>
+			</td>
+		</tr>
+	</table>
+</form>
+
+<button type='submit' form='f'>login</button>
+<a href="/newuser"> Register Now</a>
+
+<% include("bottom")%>

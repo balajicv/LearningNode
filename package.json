@@ -1,0 +1,24 @@
+{
+  "name": "LearningNode",
+  "version": "0.0.0",
+  "description": "learning node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "dependencies":{
+  	"mongoose" : "latest",
+  	"http":"*",
+  	"url":"*",
+  	"express":"*",
+    "ejs":"*",
+    "morgan":"*",
+    "body-parser":"*",
+    "multer":"*",
+    "bootstrap":"*",
+    "jQuery":"*",
+    "jsdom":"3.1.2"
+  },
+  "author": "Balaji",
+  "license": "ISC"
+}
