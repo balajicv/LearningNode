@@ -3,10 +3,7 @@ var express = require("express"),
 	logger = require("morgan"),
 	bodyParser=require("body-parser"),
 	mongoose = require("mongoose"), 
-	multer=require("multer"),
-  jQuery=require("jQuery"),
-  jsdom=require("jsdom"),
-  bs=require("bootstrap");
+	multer=require("multer");
 
 require("./db/schemas/user");
 
@@ -19,6 +16,7 @@ mongoose.connect("mongodb://localhost/users", function (err, res) {
     });
 
  //or other option 
+app.use("/static",express.static("./public/CDN"));
 
 app.set("view engine","ejs");
 app.use(logger());

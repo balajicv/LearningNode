@@ -1,31 +1,24 @@
-<% include("top")%>
+<% include top %>
 
-<form action='/login' method='post' id='f'>
-	<table>
-		<tr>
-			<td>
-				<span>
-					<strong>email</strong>
-				</span>
-			</td>
-			<td>
-				<input id='username' type='text' name='email'/>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<span>
-					<strong>password</strong>
-				</span>
-			</td>
-			<td>
-				<input id='pin' type='text' name='password'/>
-			</td>
-		</tr>
-	</table>
-</form>
 
-<button type='submit' form='f'>login</button>
-<a href="/newuser"> Register Now</a>
+<div class="container">
 
-<% include("bottom")%>
+      <form class="form-signin" action='/login' method='post' id='f'>
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="username" class="sr-only">Email address</label>
+        <input type="email" name='email' id="username" class="form-control" placeholder="Email address" required autofocus>
+        <label for="pin" class="sr-only">Password</label>
+        <input type="password" id="pin" name="password" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" form='f'>Sign in</button>
+        <a href="/newuser" class="btn btn-lg btn-primary btn-block">Register Now</a>
+      </form>
+
+    </div> <!-- /container -->
+
+
+<% include bottom %>

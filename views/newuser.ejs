@@ -1,44 +1,22 @@
-<html>
-<head>
-</head>
-<body>
-<form action='/newuser' method='post' id='f'>
-	<table>
-		<tr>
-			<td>
-				<span>
-					<strong>username</strong>
-				</span>
-			</td>
-			<td>
-				<input id='username' type='text' name='uname'/>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<span>
-					<strong>password</strong>
-				</span>
-			</td>
-			<td>
-				<input id='pin' type='password' name='password'/>
-			</td>
-		</tr>
+<% include top %>
 
-		<tr>
-			<td>
-				<span>
-					<strong>email</strong>
-				</span>
-			</td>
-			<td>
-				<input id='email' type='text' name='email'/>
-			</td>
-		</tr>
-	</table>
-</form>
+<div class="container">
 
-<button type='submit' form='f'>Submit</button>
+      <form class="form-signin" action='/newuser' method='post' id='f'>
+        <h2 class="form-signin-heading">Account Registration</h2>
 
-</body>
-</html>
+        <label for="username" class="sr-only">Username</label>
+        <input type="text" name='uname' id="username" class="form-control" placeholder="Username" required autofocus>
+        <label for="pin" class="sr-only">Password</label>
+        <input type="password" id="pin" name="password" class="form-control" placeholder="Password" required>
+        <label for="email" class="sr-only">Email ID</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Email ID" required>  
+        <div>      
+        	<br><button class="btn btn-lg btn-primary btn-block" type="submit" form='f'>Sign Up</button></br>
+    	</div>
+      </form>
+
+    </div> 
+
+
+<% include bottom %>

@@ -17,7 +17,7 @@
     "multer":"*",
     "bootstrap":"*",
     "jQuery":"*",
-    "jsdom":"3.1.2"
+    "jsdom":""
   },
   "author": "Balaji",
   "license": "ISC"
